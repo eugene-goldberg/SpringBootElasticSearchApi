@@ -10,16 +10,17 @@ import org.springframework.boot.autoconfigure.data.elasticsearch.ElasticsearchDa
 @SpringBootApplication(exclude = {ElasticsearchAutoConfiguration.class, ElasticsearchDataAutoConfiguration.class})
 public class SampleJestApplication implements CommandLineRunner {
 
-	@Autowired
-	private CustomerRepository repository;
+//	@Autowired
+//	private CustomerRepository repository;
 
-	@Override
-	public void run(String... args) throws Exception {
 
+
+	public static void main(String[] args)  {SpringApplication.run(SampleJestApplication.class, args);
 	}
 
-	public static void main(String[] args) throws Exception {
-		SpringApplication.run(SampleJestApplication.class, "--debug");
-	}
+    @Override
+    public void run(String... args) throws Exception {
+
+    }
 
 }

@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 
 @Component
 public class Loaders {
-
+private int i = 0;
     @Autowired
     private CustomerRepository repository;
 
@@ -16,10 +16,10 @@ public class Loaders {
     @Transactional
     public void loadAll(){
         CustomerRepository cr = repository;
-        this.repository.deleteAll();
-        saveCustomers();
+//        this.repository.deleteAll();
+//        saveCustomers();
         fetchAllCustomers();
-        fetchIndividualCustomers();
+//        fetchIndividualCustomers();
 
     }
 
