@@ -17,15 +17,15 @@ private int i = 0;
     public void loadAll(){
         CustomerRepository cr = repository;
 //        this.repository.deleteAll();
-//        saveCustomers();
-        fetchAllCustomers();
+        saveCustomers();
+//        fetchAllCustomers();
 //        fetchIndividualCustomers();
 
     }
 
     private void saveCustomers() {
         this.repository.save(new Customer("Jerry", "Smith"));
-        this.repository.save(new Customer("Bob", "Smith"));
+        this.repository.save(new Customer("Will", "Smith"));
     }
 
     private void fetchAllCustomers() {
