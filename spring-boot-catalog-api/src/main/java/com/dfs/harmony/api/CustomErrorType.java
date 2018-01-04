@@ -1,4 +1,4 @@
-package sample.data.jest;
+package com.dfs.harmony.api;
 
 public class CustomErrorType {
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package sample.data.jest.aws;
+package com.dfs.harmony.api.aws;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

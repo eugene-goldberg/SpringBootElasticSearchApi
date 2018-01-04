@@ -1,4 +1,4 @@
-package sample.data.jest;
+package com.dfs.harmony.api;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;

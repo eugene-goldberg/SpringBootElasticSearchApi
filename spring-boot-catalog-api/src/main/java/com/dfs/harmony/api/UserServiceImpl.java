@@ -1,4 +1,4 @@
-package sample.data.jest;
+package com.dfs.harmony.api;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.stereotype.Service;
-
-import sample.data.jest.User;
-
 
 
 @Service("userService")

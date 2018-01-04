@@ -1,8 +1,6 @@
-package sample.data.jest;
+package com.dfs.harmony.api;
 
 import java.util.List;
-
-import sample.data.jest.User;
 
 public interface UserService {
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package sample.data.jest.aws;
+package com.dfs.harmony.api.aws;
 
 import java.util.List;
 

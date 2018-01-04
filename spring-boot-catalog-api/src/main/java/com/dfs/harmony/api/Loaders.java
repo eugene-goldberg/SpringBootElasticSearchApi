@@ -1,4 +1,4 @@
-package sample.data.jest;
+package com.dfs.harmony.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
