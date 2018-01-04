@@ -9,16 +9,23 @@ public class DatasetMetadata {
     @Id
     private String id;
 
-    private String firstName;
+//    private String firstName;
+//
+//    private String lastName;
 
-    private String lastName;
+    private String datasetName;
 
     public DatasetMetadata() {
     }
 
-    public DatasetMetadata(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+//    public DatasetMetadata(String firstName, String lastName, String datasetName) {
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//        this.datasetName = datasetName;
+//    }
+
+    public DatasetMetadata(String firstName, String lastName, String datasetName) {
+        this.datasetName = datasetName;
     }
 
     public String getId() {
@@ -29,25 +36,33 @@ public class DatasetMetadata {
         this.id = id;
     }
 
-    public String getfirstName() {
-        return this.firstName;
+    public String getDatasetName() {
+        return this.datasetName;
     }
 
-    public void setfirstName(String firstName) {
-        this.firstName = firstName;
+    public void setDatasetName(String datasetName) {
+        this.datasetName = datasetName;
     }
 
-    public String getlastName() {
-        return this.lastName;
-    }
-
-    public void setlastName(String lastName) {
-        this.lastName = lastName;
-    }
+//    public String getfirstName() {
+//        return this.firstName;
+//    }
+//
+//    public void setfirstName(String firstName) {
+//        this.firstName = firstName;
+//    }
+//
+//    public String getlastName() {
+//        return this.lastName;
+//    }
+//
+//    public void setlastName(String lastName) {
+//        this.lastName = lastName;
+//    }
 
     @Override
     public String toString() {
-        return String.format("Dataset[id=%s, firstName='%s', lastName='%s']", this.id,
-                this.firstName, this.lastName);
+        return String.format("Dataset[id=%s, datasetName='%s']", this.id,
+                this.datasetName);
     }
 }

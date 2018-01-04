@@ -16,7 +16,7 @@ private int i = 0;
     @Transactional
     public void loadAll(){
         DatasetRepository cr = repository;
-//        this.repository.deleteAll();
+         this.repository.deleteAll();
 //        saveCustomers();
           saveDatasetMetadata();
 //        fetchAllCustomers();
@@ -31,8 +31,8 @@ private int i = 0;
 //    }
 
     private void saveDatasetMetadata() {
-        this.repository.save(new DatasetMetadata("Trade Line", "Trade Line dataset description"));
-        this.repository.save(new DatasetMetadata("Credit Line", "Credit Line dataset description"));
+        this.repository.save(new DatasetMetadata("Trade Line", "Trade Line dataset description", "Trade Line Dataset Name"));
+        this.repository.save(new DatasetMetadata("Credit Line", "Credit Line dataset description", "Credit Line Dataset Name"));
     }
 
     private void fetchAllDatasetMetadata() {
